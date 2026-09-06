@@ -1,0 +1,15 @@
+name: workflow-uses
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  job-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: use-library
+        uses: actions/checkout@v6
+      - name: execute-comand
+        run: ls -la
