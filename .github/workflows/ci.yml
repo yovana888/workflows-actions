@@ -1,0 +1,17 @@
+name: workflow-ci
+
+on: 
+  push: 
+    branches:
+      - develop
+
+jobs:
+  runs-on: ubuntu-latest
+  job01:
+    steps:
+      - name: node-version
+        run: node -v
+
+      - name: npm-version
+        run: npm -v
+
