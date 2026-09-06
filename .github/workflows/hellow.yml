@@ -1,7 +1,7 @@
 name: workflow-hellow
 
 on: push
-branch: develop
+branches: develop
 
 jobs: 
   test:
