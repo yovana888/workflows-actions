@@ -1,0 +1,15 @@
+name: workflow-manual
+
+on: 
+  workflow_dispatch:
+
+jobs:
+  job01:
+    runs-on: ubuntu-latest
+    steps:
+      - name: data-date
+        run: date
+      - name: data-user
+        run: whoami
+        
+
