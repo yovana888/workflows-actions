@@ -1,0 +1,26 @@
+name: workflow-secuencial
+
+on: 
+  push:
+    branches:
+      - develop
+
+jobs:
+  job-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: s-test
+        run: echo "Ejecutando test"
+
+  job-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: s-build
+        run: echo "Ejecutando build"
+
+  job-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: s-deploy
+        run: echo "Ejecutando deploy"
+
