@@ -1,0 +1,18 @@
+name: workflow-hellow
+
+on: push
+branch: develop
+
+jobs: 
+  test:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: test
+      run: echo "Ejecuntado test"
+
+    - name: build
+      run: echo "Ejecutando Build"
+
+    - name: deploy
+      run: echo "Ejecutando deploy"
